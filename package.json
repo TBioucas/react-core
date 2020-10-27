@@ -23,29 +23,7 @@
     "lint:style:fix": "stylelint **/*.{css,scss} --fix --ignore-path .gitignore",
     "lint:all": "npm run lint:js && npm run lint:style",
     "lint:all:fix": "npm run lint:js:fix && npm run lint:style:fix",
-    "jest": "jest",
-    "jest:update-snapshot": "jest --updateSnapshot",
     "version": "echo $npm_package_version"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
-    }
   },
   "browserslist": {
     "production": [
