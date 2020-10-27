@@ -57,7 +57,7 @@
     "stylelint-prettier": "^1.1.2"
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,jsx}": [
       "npm run lint:js:fix",
       "git add"
     ],
